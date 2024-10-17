@@ -18,6 +18,8 @@
 	<Motion.div class="handle" layout transition={spring} />
 </button>
 
+<p>This should animate on click</p>
+
 <style>
 	.switch {
 		all: unset;

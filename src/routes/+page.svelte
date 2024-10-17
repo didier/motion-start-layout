@@ -28,7 +28,6 @@
 		justify-content: flex-start;
 		border-radius: 50px;
 		padding: 0.5rem;
-
 		cursor: pointer;
 	}
 

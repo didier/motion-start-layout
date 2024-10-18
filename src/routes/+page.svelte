@@ -1,5 +1,5 @@
 <script>
-	import { Motion, AnimateSharedLayout } from 'motion-start'
+	import { Motion as motion, AnimateSharedLayout } from 'motion-start'
 
 	const spring = {
 		type: 'spring',
@@ -14,11 +14,11 @@
 	}
 </script>
 
-<button class="switch" data-active={active} onclick={toggleSwitch}>
-	<AnimateSharedLayout>
-		<Motion.div class="handle" layout transition={spring} />
-	</AnimateSharedLayout>
-</button>
+<AnimateSharedLayout>
+	<button class="switch" data-active={active} onclick={toggleSwitch}>
+		<motion.div layout class="handle" transition={spring} />
+	</button>
+</AnimateSharedLayout>
 
 <p>This should animate on click</p>
 
